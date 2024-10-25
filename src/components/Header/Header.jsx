@@ -1,10 +1,21 @@
 import { NavLink } from "react-router-dom";
-import { Badge, CartIcon, HeaderStyled, NavContainer } from "./Header.styled";
+import {
+  Badge,
+  CartIcon,
+  HeaderStyled,
+  MobileMenuStyled,
+  NavContainer,
+} from "./Header.styled";
+import MobileMenu from "../MobileMenu/MobileMenu";
 
 export const Header = ({ cartCount }) => {
   return (
     <HeaderStyled>
+      <MobileMenuStyled>
+        <MobileMenu />
+      </MobileMenuStyled>
       <div>Furniture Store</div>
+
       <NavContainer>
         <NavLink to="/" className="nav-link">
           Home
@@ -28,6 +39,7 @@ export const Header = ({ cartCount }) => {
           Sofas
         </NavLink>
       </NavContainer>
+
       <CartIcon>
         <svg width="35" height="30">
           <use href="#icon-basket"></use>

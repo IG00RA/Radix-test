@@ -37,7 +37,7 @@ export const CabinetsPage = ({ handleAddToCart }) => {
 
   return (
     <MobileWrapper>
-      <Slider product={product} />
+      <Slider product={product} styleType={"split"} />
       <ProductDetails>
         <ProductName>{product.name}</ProductName>
         <Price>{product.price}</Price>

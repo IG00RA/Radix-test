@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import * as Select from "@radix-ui/react-select";
 
-// Styled Select components
 export const StyledSelectTrigger = styled(Select.Trigger)`
   display: inline-flex;
   align-items: center;
@@ -50,9 +49,13 @@ export const StyledSelectIcon = styled.span`
 export const MobileWrapper = styled.div`
   max-width: 90%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: 768px) {
     max-width: 80%;
+    flex-direction: row;
   }
 
   @media (min-width: 1024px) {
@@ -66,6 +69,7 @@ export const ProductDetails = styled.div`
 
   @media (min-width: 768px) {
     padding: 30px;
+    max-width: 50%;
   }
 
   @media (min-width: 1024px) {
@@ -122,13 +126,14 @@ export const OptionSelector = styled.div`
   margin-bottom: 10px;
 
   @media (min-width: 480px) {
-    flex-direction: row;
     gap: 20px;
     margin-bottom: 15px;
   }
   @media (min-width: 768px) {
-    flex-direction: row;
     margin-bottom: 0px;
+  }
+  @media (min-width: 1224px) {
+    flex-direction: row;
   }
 `;
 
@@ -140,7 +145,7 @@ export const ButtonWrap = styled.div`
   margin-bottom: 20px;
 
   @media (min-width: 768px) {
-    flex-direction: row;
+    gap: 30px;
     justify-content: space-around;
     margin-bottom: 40px;
   }

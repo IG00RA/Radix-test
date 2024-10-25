@@ -1,3 +1,5 @@
+// HomePage.styled.js
+
 import styled from "styled-components";
 import { Box, Card, Heading, Text, Link as RadixLink } from "@radix-ui/themes";
 
@@ -8,6 +10,10 @@ export const Container = styled(Box)`
   padding: 32px;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
 `;
 
 export const CategoryCard = styled(Card)`
@@ -20,6 +26,11 @@ export const CategoryCard = styled(Card)`
   border-radius: 8px;
   box-shadow: var(--shadow-md);
   background-color: var(--color-panel-solid);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+  }
 `;
 
 export const CategoryImage = styled.img`
@@ -33,6 +44,11 @@ export const CategoryImage = styled.img`
   &:hover {
     transform: scale(1.05);
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 300px;
+  }
 `;
 
 export const CategoryText = styled(Box)`
@@ -40,6 +56,11 @@ export const CategoryText = styled(Box)`
   flex-direction: column;
   gap: 8px;
   max-width: 600px;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const CategoryHeading = styled(Heading)`

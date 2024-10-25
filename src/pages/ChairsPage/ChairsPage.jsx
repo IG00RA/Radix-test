@@ -21,7 +21,6 @@ import img3 from "../../assets/chair/484238_3_800.webp";
 import img4 from "../../assets/chair/484238_4_800.webp";
 import img5 from "../../assets/chair/484238_8_800.webp";
 import img6 from "../../assets/chair/484238_9_800.webp";
-import img7 from "../../assets/chair/484238_10_800.webp";
 import Slider from "../../components/Slider/Slider";
 
 export const ProductPage = ({ handleAddToCart }) => {
@@ -30,7 +29,7 @@ export const ProductPage = ({ handleAddToCart }) => {
     description:
       "A beautiful, minimalist chair perfect for any modern home. This chair combines comfort and elegance with a sleek, modern design. Crafted from high-quality materials, it is durable, lightweight, and easy to clean. The ergonomic design ensures maximum comfort, whether you're using it in your living room, home office, or dining area. The chair is easy to assemble and is available in multiple color and size options.",
     price: "$199.99",
-    images: [img1, img2, img3, img4, img5, img6, img7],
+    images: [img1, img2, img3, img4, img5, img6],
     options: {
       size: ["Small", "Medium", "Large"],
       color: ["Black", "White", "Gray"],
@@ -39,7 +38,7 @@ export const ProductPage = ({ handleAddToCart }) => {
 
   return (
     <MobileWrapper>
-      <Slider product={product} />
+      <Slider product={product} styleType={"split"} />
       <ProductDetails>
         <ProductName>{product.name}</ProductName>
         <Price>{product.price}</Price>
