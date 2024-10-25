@@ -1,6 +1,17 @@
 @import "/node_modules/modern-normalize/modern-normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
+:root {
+  --color-background: #ffffff;
+  --color-panel-solid: #f9f9f9;
+  --color-accent: #537497;
+  --color-accent-emphasis: #537497;
+  --color-hi-contrast: #333333;
+  --color-lo-contrast: #666666;
+  --shadow-sm: rgba(0, 0, 0, 0.1);
+  --shadow-md: rgba(0, 0, 0, 0.15);
+}
+
 html {
   box-sizing: border-box;
 }

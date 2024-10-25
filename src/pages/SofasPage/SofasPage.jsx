@@ -13,24 +13,22 @@ import {
   StyledSelectItem,
   StyledSelectViewport,
   StyledSelectIcon,
-} from "./ProductPage.styled";
+} from "./SofasPage.styled";
 
-import img1 from "../../assets/484238_1_800.webp";
-import img2 from "../../assets/484238_2_800.webp";
-import img3 from "../../assets/484238_3_800.webp";
-import img4 from "../../assets/484238_4_800.webp";
-import img5 from "../../assets/484238_8_800.webp";
-import img6 from "../../assets/484238_9_800.webp";
-import img7 from "../../assets/484238_10_800.webp";
-import Slider from "../Slider/Slider";
+import img1 from "../../assets/sofa/default_name.webp";
+import img2 from "../../assets/sofa/default_name (1).webp";
+import img3 from "../../assets/sofa/default_name (2).webp";
+import img4 from "../../assets/sofa/default_name (3).webp";
+import img5 from "../../assets/sofa/oswald_sofa_bed_dessin_twist_lifestyle.jpg";
+import Slider from "../../components/Slider/Slider";
 
-export const ProductPage = ({ handleAddToCart }) => {
+export const SofasPage = ({ handleAddToCart }) => {
   const product = {
-    name: "Minimalist Chair",
+    name: "Minimalist Sofa",
     description:
-      "A beautiful, minimalist chair perfect for any modern home. This chair combines comfort and elegance with a sleek, modern design. Crafted from high-quality materials, it is durable, lightweight, and easy to clean. The ergonomic design ensures maximum comfort, whether you're using it in your living room, home office, or dining area. The chair is easy to assemble and is available in multiple color and size options.",
-    price: "$199.99",
-    images: [img1, img2, img3, img4, img5, img6, img7],
+      "Indulge in comfort with our collection of sofas, perfect for relaxing moments at home. With a range of styles, from contemporary to classic, each sofa is designed for ultimate relaxation. Made from high-quality materials, they offer both durability and style. Whether you're hosting guests or enjoying a movie night, our sofas provide the perfect spot to unwind.",
+    price: "$899.99",
+    images: [img1, img2, img3, img4, img5],
     options: {
       size: ["Small", "Medium", "Large"],
       color: ["Black", "White", "Gray"],
@@ -87,4 +85,4 @@ export const ProductPage = ({ handleAddToCart }) => {
   );
 };
 
-export default ProductPage;
+export default SofasPage;
